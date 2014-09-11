@@ -2,8 +2,13 @@ var agol = require('koop-agol/models/agol'),
   fs = require('fs');
 global.GeoJSON = require('./GeoJSON');
 
-var esHost = 'localhost:9200', 
-  indexName = 'test3';
+var esHost = process.argv[2] || 'localhost:9200', 
+  indexName = process.argv[3];
+
+if (!esHost || !indexName){
+  console.log('Must specify a ES host and an index name ')
+  process.exit();
+}
 
 var Cache = require('./Cache.js');
 
