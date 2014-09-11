@@ -1,6 +1,6 @@
 var agol = require('koop-agol/models/agol'),
   fs = require('fs');
-global.GeoJSON = require('koop-server/lib/GeoJSON');
+global.GeoJSON = require('./GeoJSON');
 
 var esHost = 'localhost:9200', 
   indexName = 'test3';
