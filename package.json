@@ -1,0 +1,16 @@
+{
+  "name": "agol-es",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "elasticsearch": "~2.4.2",
+    "koop-server": "https://github.com/Esri/koop-server/tarball/master",
+    "koop-agol": "https://github.com/Esri/koop-agol/tarball/master"
+  }
+}
