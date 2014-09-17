@@ -41,7 +41,7 @@ var Cache = function( host, index ){
       index: index,
       type: 'feature',
       body: {
-        properties: feature.properties,
+        properties: JSON.stringify(feature.properties),
         geometry: feature.geometry,
         id: feature.id
       }
